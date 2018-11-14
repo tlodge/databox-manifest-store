@@ -1,0 +1,53 @@
+{
+    "manifest-version": 1,
+    "name": "tlodge-osmonitorlist",
+    "version": "0.3.0",
+    "description": "testing",
+    "author": "tlodge",
+    "licence": "MIT",
+    "databox-type": "app",
+    "tags": [
+        "test"
+    ],
+    "homepage": "https://github.com/tlodge/tlodge-osmonitorlist",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tlodge/tlodge-osmonitorlist.git"
+    },
+    "packages": [
+        {
+            "id": "9a8a555dbaad08",
+            "name": "new package",
+            "purpose": "test",
+            "required": false,
+            "datastores": [
+                "fbaae08b547b3"
+            ],
+            "benefits": "test"
+        }
+    ],
+    "allowed-combinations": [],
+    "datasources": [
+        {
+            "type": "loadavg1",
+            "required": true,
+            "name": "osmonitor",
+            "clientid": "fbaae08b547b3",
+            "granularities": []
+        },
+        {
+            "type": "personalLoggerActuator",
+            "required": false,
+            "name": "personalLoggerActuator",
+            "clientid": "personalLoggerActuator",
+            "granularites": []
+        }
+    ],
+    "network-permissions": [],
+    "resource-requirements": {},
+    "volumes": [],
+    "export-whitelist": [],
+    "docker-image": "tlodge-osmonitorlist",
+    "docker-registry": "https://registry.iotdatabox.com",
+    "docker-image-tag": "latest"
+}
