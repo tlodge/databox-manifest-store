@@ -1,0 +1,53 @@
+{
+    "manifest-version": 1,
+    "name": "tlodge-plugrandom2",
+    "version": "0.3.0",
+    "description": "test",
+    "author": "tlodge",
+    "licence": "MIT",
+    "databox-type": "app",
+    "tags": [
+        "test"
+    ],
+    "homepage": "https://github.com/tlodge/tlodge-plugrandom2",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tlodge/tlodge-plugrandom2.git"
+    },
+    "packages": [
+        {
+            "id": "6950e8e3800838",
+            "name": "new package",
+            "purpose": "test",
+            "required": false,
+            "datastores": [
+                "fcd4f684071178"
+            ],
+            "benefits": "test"
+        }
+    ],
+    "allowed-combinations": [],
+    "datasources": [
+        {
+            "type": "TP-SetPowerState",
+            "required": true,
+            "name": "plugout",
+            "clientid": "fcd4f684071178",
+            "granularities": []
+        },
+        {
+            "type": "personalLoggerActuator",
+            "required": false,
+            "name": "personalLoggerActuator",
+            "clientid": "personalLoggerActuator",
+            "granularites": []
+        }
+    ],
+    "network-permissions": [],
+    "resource-requirements": {},
+    "volumes": [],
+    "export-whitelist": [],
+    "docker-image": "tlodge-plugrandom2",
+    "docker-registry": "registry.iotdatabox.com",
+    "docker-image-tag": "latest"
+}
