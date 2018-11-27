@@ -31,7 +31,7 @@
     "allowed-combinations": [],
     "datasources": [
         {
-            "type": "TP-Power-Usage",
+            "type": "TP-PowerState",
             "required": true,
             "name": "plugin",
             "clientid": "9bf3d1fb6033a",
