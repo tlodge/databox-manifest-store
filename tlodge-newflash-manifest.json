@@ -1,0 +1,53 @@
+{
+    "manifest-version": 1,
+    "name": "tlodge-newflash",
+    "version": "0.3.0",
+    "description": "asf",
+    "author": "tlodge",
+    "licence": "MIT",
+    "databox-type": "app",
+    "tags": [
+        "safsaf"
+    ],
+    "homepage": "https://github.com/tlodge/tlodge-newflash",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tlodge/tlodge-newflash.git"
+    },
+    "packages": [
+        {
+            "id": "a2333b56edadc8",
+            "name": "new package",
+            "purpose": "sasa",
+            "required": false,
+            "datastores": [
+                "67598337e83f6c"
+            ],
+            "benefits": "fsaa"
+        }
+    ],
+    "allowed-combinations": [],
+    "datasources": [
+        {
+            "type": "set-bulb-on",
+            "required": true,
+            "name": "bulbsout",
+            "clientid": "67598337e83f6c",
+            "granularities": []
+        },
+        {
+            "type": "personalLoggerActuator",
+            "required": false,
+            "name": "personalLoggerActuator",
+            "clientid": "personalLoggerActuator",
+            "granularites": []
+        }
+    ],
+    "network-permissions": [],
+    "resource-requirements": {},
+    "volumes": [],
+    "export-whitelist": [],
+    "docker-image": "tlodge-newflash",
+    "docker-registry": "registry.iotdatabox.com",
+    "docker-image-tag": "latest"
+}
