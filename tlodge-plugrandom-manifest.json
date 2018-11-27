@@ -1,0 +1,53 @@
+{
+    "manifest-version": 1,
+    "name": "tlodge-plugrandom",
+    "version": "0.3.0",
+    "description": "randomly turn smart plug on/off",
+    "author": "tlodge",
+    "licence": "MIT",
+    "databox-type": "app",
+    "tags": [
+        "test"
+    ],
+    "homepage": "https://github.com/tlodge/tlodge-plugrandom",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tlodge/tlodge-plugrandom.git"
+    },
+    "packages": [
+        {
+            "id": "c13dbd7800924",
+            "name": "new package",
+            "purpose": "test",
+            "required": false,
+            "datastores": [
+                "3320ceec4e8182"
+            ],
+            "benefits": "test"
+        }
+    ],
+    "allowed-combinations": [],
+    "datasources": [
+        {
+            "type": "TP-SetPowerState",
+            "required": true,
+            "name": "plugout",
+            "clientid": "3320ceec4e8182",
+            "granularities": []
+        },
+        {
+            "type": "personalLoggerActuator",
+            "required": false,
+            "name": "personalLoggerActuator",
+            "clientid": "personalLoggerActuator",
+            "granularites": []
+        }
+    ],
+    "network-permissions": [],
+    "resource-requirements": {},
+    "volumes": [],
+    "export-whitelist": [],
+    "docker-image": "tlodge-plugrandom",
+    "docker-registry": "registry.iotdatabox.com",
+    "docker-image-tag": "latest"
+}
