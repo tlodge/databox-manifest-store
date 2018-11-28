@@ -1,0 +1,69 @@
+{
+    "manifest-version": 1,
+    "name": "tlodge-task6",
+    "version": "0.3.0",
+    "description": "test task 6",
+    "author": "tlodge",
+    "licence": "MIT",
+    "databox-type": "app",
+    "tags": [
+        "presence"
+    ],
+    "homepage": "https://github.com/tlodge/task_six",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tlodge/task_six.git"
+    },
+    "packages": [
+        {
+            "id": "316d391f.9fe716",
+            "name": "new package",
+            "purpose": "test",
+            "required": false,
+            "datastores": [
+                "f48c105414622",
+                "c58c7d6bdf898",
+                "754453f1c43a4c"
+            ],
+            "benefits": "test"
+        }
+    ],
+    "allowed-combinations": [],
+    "datasources": [
+        {
+            "type": "hue-ZLLPresence",
+            "required": true,
+            "name": "bulbsin",
+            "clientid": "f48c105414622",
+            "granularities": []
+        },
+        {
+            "type": "set-bulb-on",
+            "required": true,
+            "name": "bulbsout",
+            "clientid": "c58c7d6bdf898",
+            "granularities": []
+        },
+        {
+            "type": "TP-SetPowerState",
+            "required": true,
+            "name": "plugout",
+            "clientid": "754453f1c43a4c",
+            "granularities": []
+        },
+        {
+            "type": "personalLoggerActuator",
+            "required": false,
+            "name": "personalLoggerActuator",
+            "clientid": "personalLoggerActuator",
+            "granularites": []
+        }
+    ],
+    "network-permissions": [],
+    "resource-requirements": {},
+    "volumes": [],
+    "export-whitelist": [],
+    "docker-image": "tlodge-task6",
+    "docker-registry": "registry.iotdatabox.com",
+    "docker-image-tag": "latest"
+}
